@@ -218,52 +218,25 @@ tr chala start karu WSL  pasun
 
 ## NO vm
 
+vm mhanje 
+full seperete OS
+tyala chalvala bharpur ram, cpu, storage 
 
-“VM म्हणजे
-पूर्ण OS
-पूर्ण RAM
-पूर्ण CPU
-पूर्ण drama.”
+complete os aslya mude suru honys sathi 
+kiman 2-3 min.
 
-❌ VM चे खरे प्रॉब्लेम
+“8 GB RAM 2 VM mhanje mahol garam. 
+tyat Snapshot sathi wegdi space 
+VM sathi wegdi space, 
+“VM corrupt zali ke lagli wat.
 
-“VM start 2–3 min ghenar .”
+ala punha reset ani installation from scratch.
 
-ani mashien wr load .”
+ashycsh karna mude production madhe pn 
+manual VM installaion nasta
+sarva automation 
+kiwa containerisation asta
 
-“8 GB RAM असेल तर 2 VM mhanje mahol garam. 1
-
-“ tyat Snapshot sathi space nahi.”
-
-“VM corrupt zali ke gand lagli.
-
-❌ VM practice मध्ये काय होतं?
-
-“एक VM
-सगळ्या practice साठी.”
-
-“User चुकला
-network तुटला
-service बंद.”
-
-“Reset करायचं
-म्हणजे
-पुन्हा install.”
-
-“Exam practice
-पेक्षा
-system सांभाळणं
-जास्त.”
-
-❌ VM = Student mindset
-
-“VM हे
-learning साठी ठीक.”
-
-“पण DevOps / SRE
-production madे
-VM हातानं
-manage करत नाही.”
 
 ✅ CONTAINERS – DEVOPS THINKING
 
