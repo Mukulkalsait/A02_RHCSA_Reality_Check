@@ -158,14 +158,19 @@ vishesh mhanje
 
     - RED hat chi kuthli pn exam 
     - 12-25 hajar paryant jate 
-    - shivay 3rd party websites wr practice sathi  
-    - credit card ani menditary charges shivay kam chalat nahi
+    - shivay 3rd party
+    - websites wr practice sathi  
+    - credit card
+    - ani menditary charges shivay 
+    - kam chalat nahi
 
-    - mhanje abhyas zala asun certification sathi paise nahi
+    - mhanje abhyas zala asun 
+    - kahi proof nahi.
 
 # proof of work
 
-    - mhanunch ashya sarvan sathi.
+    - mhanunch 
+    - ashya sarvan sathi.
 
     - proof of work style 
     - he seirese me gheun alo ahe ahe.
@@ -176,8 +181,11 @@ vishesh mhanje
     - karnar ahe 
 
     - github te post karnar ahe.
-    - mhanjech aplya kala-kahushyal cha dukan mandndun 
-    - recruters la akarshit karnar aho.
+    - mhanjech aplya kala-kahushyal 
+    - cha dukan mandndun 
+    - recruters la akarshit karicha 
+    - ya seriese cha goal ahe.
+
 
 
 ======================================================================================================================================================
