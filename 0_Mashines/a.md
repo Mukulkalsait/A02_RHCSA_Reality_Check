@@ -218,6 +218,122 @@ tr chala start karu WSL  pasun
 
 ## NO vm
 
+
+“VM म्हणजे
+पूर्ण OS
+पूर्ण RAM
+पूर्ण CPU
+पूर्ण drama.”
+
+❌ VM चे खरे प्रॉब्लेम
+
+“VM start व्हायला
+2–3 मिनिट.”
+
+“Laptop fan
+aeroplane सर्का फिरतो.”
+
+“8 GB RAM असेल
+तर 2 VM नंतर
+system संपतो.”
+
+“Snapshot घेतला
+disk भरतो.”
+
+“VM corrupt झाला
+तर पूर्ण lab
+गेला.”
+
+❌ VM practice मध्ये काय होतं?
+
+“एक VM
+सगळ्या practice साठी.”
+
+“User चुकला
+network तुटला
+service बंद.”
+
+“Reset करायचं
+म्हणजे
+पुन्हा install.”
+
+“Exam practice
+पेक्षा
+system सांभाळणं
+जास्त.”
+
+❌ VM = Student mindset
+
+“VM हे
+learning साठी ठीक.”
+
+“पण DevOps / SRE
+production madे
+VM हातानं
+manage करत नाही.”
+
+✅ CONTAINERS – DEVOPS THINKING
+
+“Infra madे
+repeatability
+सगळ्यात मोठी value आहे.”
+
+✅ Container म्हणजे काय?
+
+“एक base image.”
+
+“तेच environment.”
+
+“तेच result.”
+
+✅ Containers का better?
+
+“Ek OS setup
+10 lab
+20 experiment
+— seconds madे.”
+
+“Container break झाला?
+Delete.”
+
+“Navin container?
+5 second.”
+
+“Host clean.
+Lab clean.
+Mind clean.”
+
+✅ Exam + Job दोन्हीसाठी
+
+“Exam practice
+isolated.”
+
+“Networking वेगळं.”
+
+“Users वेगळे.”
+
+“Services वेगळ्या.”
+
+“Same Dockerfile
+multiple labs.”
+
+🔥 KEY LINE (slow बोल)
+
+“Infra engineer
+problem solve करतो,
+OS install नाही.”
+
+🔚 BRIDGE TO NEXT PART
+
+“म्हणून
+VM नाही.”
+
+“Containerisation
+पहिल्या दिवशीपासून.”
+
+“आता बघुया
+Podman का?”
+
 DISADVANTAGES OF VM 
 
 containerisation. podman / docker 
@@ -247,28 +363,50 @@ devops sarkha vichar,
 
 ---
 
-## 🦭 WHY PODMAN > DOCKER (7:00 – 9:00)
+🦭 WHY PODMAN > DOCKER
 
-> “ Podman ka docker ka nahi,
-> 
-> 
-> mazi marzi”
-> 
-> podman 
-> 
+“Docker ka nahi?”
 
-> “Rootless — mhanje gandfad  security ”
-> 
+“Karan
+Podman.”
 
-> “Daemon nahi — mhanje crash कमी.”
-> 
+“Rootless run hoto.”
 
-> “RedHat ecosystem  — RHCSA, RHCE, OpenShift.”
-> 
+“Rootless
+mhanje
+strong security.”
 
-> “ mhanjech Exam sathi pan, job sathi pan Podman better.”
-> 
+“Production madhe
+root la free pass nahi.”
 
+“Podman ला
+daemon nahi.”
+
+“Daemon nahi
+mhanje
+kam crash.”
+
+“System stable.”
+
+“Podman
+RedHat ecosystem madhe fit.”
+
+“RHCSA.”
+
+“RHCE.”
+
+“OpenShift.”
+
+“Exam madhe je ahe
+te job madhe pan ahe.”
+
+“Ani job madhe je ahe
+te exam madhe pan.”
+
+🔥 KEY LINE (slow बोल)
+
+“Tool trendy nasava,
+tool relevant pahije.”
 ---
 
 ## 🧪 LIVE DEMO START (9:00 – 12:00)
