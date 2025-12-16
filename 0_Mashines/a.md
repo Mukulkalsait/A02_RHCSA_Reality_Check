@@ -227,22 +227,15 @@ tr chala start karu WSL  pasun
 
 ❌ VM चे खरे प्रॉब्लेम
 
-“VM start व्हायला
-2–3 मिनिट.”
+“VM start 2–3 min ghenar .”
 
-“Laptop fan
-aeroplane सर्का फिरतो.”
+ani mashien wr load .”
 
-“8 GB RAM असेल
-तर 2 VM नंतर
-system संपतो.”
+“8 GB RAM असेल तर 2 VM mhanje mahol garam. 1
 
-“Snapshot घेतला
-disk भरतो.”
+“ tyat Snapshot sathi space nahi.”
 
-“VM corrupt झाला
-तर पूर्ण lab
-गेला.”
+“VM corrupt zali ke gand lagli.
 
 ❌ VM practice मध्ये काय होतं?
 
