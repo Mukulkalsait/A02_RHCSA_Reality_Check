@@ -10,9 +10,9 @@ RUN dnf clean all && \
 
 RUN mkdir -p /run/sshd
 
-RUN useradd -m -s /bin/bash examuser-rockey && \ 
-    echo "examuser-rockey:asdf123" | chpasswd && \ 
-    usermod -aG wheel examuser-rockey
+RUN useradd -m -s /bin/bash examuser-rocky && \ 
+    echo "examuser-rocky:asdf123" | chpasswd && \ 
+    usermod -aG wheel examuser-rocky
 
 
 COPY ./config/sshd_config /etc/ssh/sshd_config
