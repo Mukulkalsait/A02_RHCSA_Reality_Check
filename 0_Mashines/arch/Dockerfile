@@ -20,6 +20,8 @@ COPY ./config/sshd_config /etc/ssh/sshd_config
 COPY ./scripts/init.sh /init.sh
 RUN chmod +x /init.sh
 
+RUN systemctl enable sshd
+
 CMD [ "/usr/lib/systemd/systemd" ]
 
 
