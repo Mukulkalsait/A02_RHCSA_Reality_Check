@@ -1,0 +1,86 @@
+# version: "3.9"
+
+services:
+
+  ubuntu:
+    container_name: ubuntu-lts
+    # build: ./ubuntu-lts
+    image: localhost/ubuntu-test
+    privileged: true # Y: | 1 | Real systemd => FUll host capibilities this provide systemd running capibilities to => sshd, firewalld, chronyd, NetworkManager
+    volumes:
+      - ./shared/authorized_keys:/root/.ssh/authorized_keys:ro # B: The ro is = Read Only
+      - ./disks/ubuntu/disk1.img:/mnt/disk1
+      - ./disks/ubuntu/disk2.img:/mnt/disk2
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro 
+      # R: systemd cannot run without cgroups => 
+      # so we mount hosts cgrops folder with containers + READ ONLY MODE.
+      # without this 
+      #
+      # - Failed to mount cgroup
+      # - System has not been booted with systemd
+       
+      
+
+    environment:
+      - container=podman  # B: this variable meke systemd behave cleanly by telling it its inside container env that = podman. 
+    command: ["/usr/sbin/init"] 
+    # R: This location contian real systemd which was provided by *|Y => 1|*
+    #  So with this command we are giving PID = 1  to systemd which starts all the programs liek sshd firewall and all. 
+    #  so It works exactly like VM
+    
+    ports:
+      - "2201:22"
+
+  rocky:
+    container_name: rocky
+    # build: ./rocky
+    image: localhost/test-rocky
+    privileged: true
+    volumes:
+      - ./shared/authorized_keys:/root/.ssh/authorized_keys:ro
+      - ./disks/rocky/disk1.img:/mnt/disk1
+      - ./disks/rocky/disk2.img:/mnt/disk2
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    environment:
+      - container=podman
+    command: ["/usr/sbin/init"]
+    ports:
+      - "2202:22"
+
+  arch:
+    container_name: arch
+    # build: ./arch
+    image: localhost/test-arch:1.1
+    privileged: true
+    volumes:
+      - ./shared/authorized_keys:/root/.ssh/authorized_keys:ro
+      - ./disks/arch/disk1.img:/mnt/disk1
+      - ./disks/arch/disk2.img:/mnt/disk2
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    environment:
+      - container=podman
+    command: ["/usr/lib/systemd/systemd"]
+    ports:
+      - "2203:22"
+
+  ubi:
+    container_name: rhel-ubi
+    # build: ./rhel-ubi
+    image: localhost/test-ubi:1.1
+    privileged: true
+    volumes:
+      - ./shared/authorized_keys:/root/.ssh/authorized_keys:ro
+      - ./disks/ubi/disk1.img:/mnt/disk1
+      - ./disks/ubi/disk2.img:/mnt/disk2
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    environment:
+      - container=podman
+    command: ["/usr/sbin/init"]
+    ports:
+      - "2204:22"
+
+networks:
+  default:
+    name: rhcsa_net
+
+
