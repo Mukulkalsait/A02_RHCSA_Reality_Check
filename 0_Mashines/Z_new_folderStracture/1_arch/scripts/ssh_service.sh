@@ -1,10 +1,10 @@
+#!/bin/bash
+
 # ssh_services=("sshd" "ssh")
 #
 # for svc in "${ssh_services[@]}"; do
 #   systemctl status "$svc" 2>/dev/null && break
 # done
-
-#!/bin/bash
 
 echo "===== CHECKING SYSTEMD STATE ====="
 systemctl is-system-running 2>/dev/null
