@@ -16,6 +16,7 @@ RUN useradd -m -s /bin/bash examuser-rocky && \
 
 
 COPY ./config/sshd_config /etc/ssh/sshd_config
+
 COPY ./scripts/init.sh /init.sh
 RUN chmod +x /init.sh
 
