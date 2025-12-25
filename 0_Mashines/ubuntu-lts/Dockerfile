@@ -2,7 +2,7 @@ FROM ubuntu:22.04
 
 ENV container podman
 #Y: disable hardware-related services (udev, dbus-hw, mounts, real tty management) and not to panic if kernel features are missing
-#without it 
+# without it 
 #
 # - System has not been booted with systemd as init system
 # - Failed units: systemd-udevd, systemd-logind
@@ -19,7 +19,7 @@ RUN apt update && \
 # so apt-get clean 
 
 
-# ssh .pid file kept here 
+# ssh .pid file kept here = process id kept here so RUNNING INSIDE THIS FOLDER
 # some contianer nnot create this folder so :
 RUN mkdir -p /var/run/sshd
 
