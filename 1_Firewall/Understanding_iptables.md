@@ -130,6 +130,62 @@ This chain is the **real firewall**.
   * package managers
 
 ✔ Mandatory rule in every firewall on Earth
+Check it:
+```bash
+
+ip addr show lo
+
+op => 
+lo: <LOOPBACK,UP,LOWER_UP>
+    inet 127.0.0.1/8
+```
+
+
+
+### Key facts:
+
+    - Always present
+    - Always up
+    - Cannot be removed
+    - Exists even with no internet
+    - lo == local
+    = But local via networking stack, not filesystem / IPC
+
+### Why do services use loopback instead of “just talking directly”?
+
+    Because network sockets are the universal language on Unix.
+    Examples:
+      - systemd → talks to services over sockets
+      - PostgreSQL → localhost:5432
+      - Docker / Podman → 127.0.0.1:port
+      - Package managers → local helper daemons
+      - Browsers → local dev servers
+    Even though everything is on the same machine:
+    ➡️ They still use TCP/IP ➡️ Just routed through lo
+    Rule order matters (iptables is first-match wins)
+
+### If loopback were below a DROP:
+
+    Local traffic would be dropped
+    System breaks instantly
+    So firewall designers place it:
+    At the very beginning
+    Before any restrictive logic
+
+In NixOS:
+``` bash
+
+     nixos-fw
+      ├─ allow lo          ← FIRST
+      ├─ allow ESTABLISHED
+      ├─ allow explicit ports
+      ├─ log
+      └─ drop
+
+```
+✔ Deterministic
+✔ Safe
+✔ Universal
 
 ---
 
