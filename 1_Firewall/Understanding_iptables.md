@@ -45,13 +45,6 @@ Chain nixos-fw-refuse (2 references)
 
 # Explanations: 
 
-Excellent — this is exactly the **right way to learn firewalls**.
-I’ll **re-present the SAME `iptables -L -n -v` output**, but I’ll **annotate it with explanations under each logical block**, not line-by-line noise.
-
-Think of this as **“annotated kernel reality”** — the kind of understanding SREs and RHCSA examiners expect.
-
----
-
 ## Annotated `iptables -L -n -v` (NixOS firewall)
 
 ---
