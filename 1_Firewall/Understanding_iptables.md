@@ -197,6 +197,8 @@ In NixOS:
 
 **This is CRITICAL**
 
+###### “If this packet belongs to a connection that was already allowed earlier, let it in.”
+
 * Allows return traffic
 * Example:
 
@@ -207,6 +209,26 @@ In NixOS:
 
 > 🔥 Interview gold:
 > “Stateful firewall allows replies without opening ephemeral ports.”
+#### Tiny real-life example (HTTPS)
+
+    1️⃣ You open a website => Your PC → google.com:443
+    2️⃣ Firewall sees:
+        ---
+        New outbound connection
+        Allows it
+        3️⃣ Google replies:
+        google.com:443 → your PC:52341
+        ---
+        Now here’s the key part 👇
+        Port 52341 is random
+        You did NOT open it explicitly
+        So how does it get in?
+        ---
+
+#### ➡️ Connection tracking remembers ➡️ Firewall says: “Ah, this is a reply to something you started.” ➡️ Allowed because it is ESTABLISHED
+
+> WebPages return huge data hence =>  count is huge (453K)
+> “Stateful firewalls track connections, so return traffic is allowed automatically without opening random ports.”
 
 ---
 
@@ -267,8 +289,8 @@ Multiple modules → one final ruleset.
 
 ### 5️⃣ Interface-specific rule
 
-```text
-udp dpt:53 in:podman0
+```bash
+udp dpt:53 in:podman0 # R:  👉 Allow DNS traffic coming from containers.
 ```
 
 **Meaning**
@@ -279,7 +301,58 @@ udp dpt:53 in:podman0
   * Podman containers
   * Internal name resolution
 
-✔ Container-aware firewall
+✔ Container-aware firewall Important advanced concept:
+
+    Containers often have their own loopback
+    Each network namespace has its own lo
+    Still must be allowed inside that namespace
+    That’s why you saw:
+    udp dpt:53 in:podman0
+
+####  Why containers need this
+
+    -  Containers run in their own network namespace
+    -  They do not use your host’s lo directly
+    -  They talk to the outside world via a virtual bridge
+    -  → podman0
+
+    -  When a container does: ping google.com
+    -  It first needs: DNS → port 53 (UDP)
+
+    -  So the firewall must allow:
+    -  Container → podman0 → DNS
+    -  If this rule did NOT exist
+
+    -  Containers would:
+    -  Fail DNS lookup
+    -  Not resolve domains
+    -  Appear “offline” even with internet access
+
+    -  Classic symptom:
+    -  ping: bad address 'google.com'
+    -  Important concept (remember this)
+
+    -  Each container network namespace has its own networking stack.
+    -  That means:
+    -  Own interfaces
+    -  Own loopback (lo)
+    -  Own routing
+
+    -  So firewall rules must be:
+    -  Interface-aware
+    -  Not just port-based
+    -  One-line mental model
+    -  Host firewall must explicitly allow container traffic on the container bridge.
+    -  Why this matters for SRE / DevOps
+    -  Docker / Podman
+    -  Kubernetes nodes
+    -  CNI plugins
+    -  Service meshes
+    -  All rely on namespace-aware firewalling.
+
+    | Interview-ready short answer
+
+> “Containers use their own network namespace and bridge interface, so the host firewall must allow DNS and other traffic on that bridge.” Namespace-aware firewalling builds on this concept.
 
 ---
 
