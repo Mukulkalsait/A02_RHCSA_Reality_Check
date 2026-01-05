@@ -6,8 +6,6 @@ RUN dnf clean all && \
     vim less curl iproute procps-ng && \
     dnf clean all
 # ps top free uptime kill = procps-ng or procps (ng =next gen)
-
-
 RUN mkdir -p /run/sshd
 
 RUN useradd -m -s /bin/bash examuser-rocky && \ 
@@ -19,6 +17,8 @@ COPY ./config/sshd_config /etc/ssh/sshd_config
 
 COPY ./scripts/init.sh /init.sh
 RUN chmod +x /init.sh
+
+EXPOSE 22 
 
 CMD [ "/usr/sbin/init" ]
 
