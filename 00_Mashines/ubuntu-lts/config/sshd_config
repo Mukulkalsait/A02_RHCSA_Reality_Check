@@ -1,0 +1,8 @@
+# ubuntu-lts
+Port 22
+PermitRootLogin no
+PasswordAuthentication yes
+ChallengeResponseAuthentication no
+usePAM yes
+X11Forwarding no
+AllowTcpForwarding yes
