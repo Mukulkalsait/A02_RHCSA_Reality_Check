@@ -2281,8 +2281,6 @@
 12280  groups 
 12281  sudo userdel abcd
 12282  sudo useradd -MNg podman abcd 
-12283  echo "abcd:asdfasdf" | passwd
-12284  sudo echo "abcd:asdfasdf" | passwd
 12285  passwd asdf
 12286  passwd abcd
 12287  sudo passwd abcd
@@ -2500,7 +2498,6 @@
 12499  lsl
 12500  y
 12501  lsl
-12502  git clone git@github.com:Mukulkalsait/ZA_Jobs.git
 12503  mv ../../A_JOBS ./
 12504  lsl
 12505  cd A_JOBS
