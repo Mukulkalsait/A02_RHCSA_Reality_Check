@@ -38,6 +38,7 @@ Set up an
 .ssh/config shortcut 
 so you connect, file transfer and manage everyting with 1 word
 All done in under 5 minutes 
+# Y: 28 sec
 ```
 
 
@@ -48,19 +49,22 @@ Voiceover: "
 
 
 # Y: 25 sec
-for full video  =>
-Head to the link in bio .
-Like =>  if this saved you time,
-comment => Next cloud hack you want to learn "IN 5 MINS"
-and follow for more DevOps & SRE Rapid Fire episodes
+
+want to learn?
+Head to the Youtube link in bio.
+Like =>  if it saved you time,
+comment => Next cloud hack - you want to learn -  "IN JUST 5 MINS"
+and follow for more  -  DevOps  -  & SRE - RapidFire episodes
 we have got 
 Rust,
 CLI tools,
-and even 
-data analysis hacks coming up
-On our channel
-Let's level up your OPS skills.
-See you in the next one!"
+and even  - 
+data analysis hacks coming up - 
+On our channel.
+----
+keep leveling up your OPS skills
+See you in the next one!
+# Y: 23 sec
 ```
 
 This keeps it under 60 sec, teases value, and ends with strong calls-to-action. Total word count: ~180 (fits 45-60 sec at quick pace).
