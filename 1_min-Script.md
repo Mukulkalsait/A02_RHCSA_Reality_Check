@@ -5,9 +5,9 @@ I've polished your modified script to make it more engaging and teaser-like—fo
 *Visual: Quick zoom on DigitalOcean logo or dashboard screenshot, with bold text overlay: "Deploy a Linux Server in UNDER 5 Minutes? 🚀". Energetic music kicks in. Show your face cam full-screen for 3-5 sec, looking excited/directly at camera.*  
 Voiceover: 
  
-<!--Y:  10 sec -->
 ```bash 
 
+# Y: 10 sec 
 Is it possible to 
 > spin up a VM 
 > generate a new SSH keypair,
@@ -15,15 +15,16 @@ Is it possible to
 > login 
 > and also setup the local SSH fast login config 
 within just 5 mins?
+# G: 12 sec
 ```
 
-<!--G: 12 sec -->
 
 **[Teaser/Build: 5-35 seconds]**  
 *Visual: Transition to sped-up clips/screenshots from your main video (e.g., blurred or partial views of dashboard, terminal commands flying by without full details). Keep face cam small in corner for 2 sec pops (e.g., at key excitement points like "Boom"). Overlay big, animated text for steps (e.g., "Create Droplet FAST", "SSH Key Magic"). Add arrow highlights or circles on UI elements.*  
 Voiceover: 
 ```bash 
 
+# Y: 30 sec
 Yes, absolutely! 
 > Watch me hit the DigitalOcean dashboard,
 pick my specs,
@@ -46,6 +47,7 @@ Voiceover: "
 ```bash 
 
 
+# Y: 25 sec
 for full video  =>
 Head to the link in bio .
 Like =>  if this saved you time,
