@@ -8,12 +8,10 @@ Voiceover:
 ```bash 
 
 # Y: 10 sec 
-Is it possible to 
-> spin up a VM 
-> generate a new SSH keypair,
-> authenticate
-> login 
-> and also setup the local SSH fast login config 
+> Is it possible to spin up a VM 
+> generate a new SSH keypair
+> authenticate - login - 
+> and also setup the - local-SSH-fast-login-config 
 within just 5 mins?
 # G: 12 sec
 ```
