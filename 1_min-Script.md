@@ -3,15 +3,63 @@ I've polished your modified script to make it more engaging and teaser-like—fo
 
 **[Hook: 0-5 seconds]**  
 *Visual: Quick zoom on DigitalOcean logo or dashboard screenshot, with bold text overlay: "Deploy a Linux Server in UNDER 5 Minutes? 🚀". Energetic music kicks in. Show your face cam full-screen for 3-5 sec, looking excited/directly at camera.*  
-Voiceover: "Is it possible to spin up a DigitalOcean droplet, generate a new SSH keypair and authenticate, login to the VM, and also setup the local SSH fast login config within just 5 mins?"
+Voiceover: 
+ 
+<!--Y:  10 sec -->
+```bash 
+
+Is it possible to 
+> spin up a VM 
+> generate a new SSH keypair,
+> authenticate
+> login 
+> and also setup the local SSH fast login config 
+within just 5 mins?
+```
+
+<!--G: 12 sec -->
 
 **[Teaser/Build: 5-35 seconds]**  
 *Visual: Transition to sped-up clips/screenshots from your main video (e.g., blurred or partial views of dashboard, terminal commands flying by without full details). Keep face cam small in corner for 2 sec pops (e.g., at key excitement points like "Boom"). Overlay big, animated text for steps (e.g., "Create Droplet FAST", "SSH Key Magic"). Add arrow highlights or circles on UI elements.*  
-Voiceover: "Yes, absolutely! Watch me hit the DigitalOcean dashboard, pick my specs, and create a droplet in seconds. Then, generate a fresh SSH key right on my host, link it up securely. Boom – droplet's live! SSH in, verify with lsb_release and uname – it's Ubuntu, ready to rock. And for that pro touch? Set up a .ssh/config shortcut so you connect with one command. All done in under 5 minutes flat!"
+Voiceover: 
+```bash 
+
+Yes, absolutely! 
+> Watch me hit the DigitalOcean dashboard,
+pick my specs,
+create droplet in seconds.
+> Then, generate a fresh SSH key right on my host,
+link it up securely.
+* and DONE ! 
+The droplet is live! & ready to rock
+And for that pro tip => 
+Set up an 
+.ssh/config shortcut 
+so you connect, file transfer and manage everyting with 1 word
+All done in under 5 minutes 
+```
+
 
 **[CTA/Close: 35-60 seconds]**  
 *Visual: Show a stopwatch graphic hitting 4:59, then cut to your face cam again for 2-3 sec with a smile/thumbs up. Flash on-screen CTA buttons like "Link in Bio 👇", "Follow for More 🔥". End with your channel handle (@cli-to-infracloud or new one) and series logo ("DevOps & SRE Rapid Fire"). Fade out with music swell.*  
-Voiceover: "Head to the link in bio for the full tutorial. Like if this saved you time, comment your fave cloud hack below, and follow for more DevOps & SRE Rapid Fire episodes – we've got Rust, CLI tools, and even data analysis coming up with my co-host! Let's level up your ops skills. See you in the next one!"
+Voiceover: "
+```bash 
+
+
+for full video  =>
+Head to the link in bio .
+Like =>  if this saved you time,
+comment => Next cloud hack you want to learn "IN 5 MINS"
+and follow for more DevOps & SRE Rapid Fire episodes
+we have got 
+Rust,
+CLI tools,
+and even 
+data analysis hacks coming up
+On our channel
+Let's level up your OPS skills.
+See you in the next one!"
+```
 
 This keeps it under 60 sec, teases value, and ends with strong calls-to-action. Total word count: ~180 (fits 45-60 sec at quick pace).
 
